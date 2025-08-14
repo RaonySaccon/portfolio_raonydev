@@ -5,12 +5,15 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ThemeProvider from "./context/Theme/ThemeProvider.jsx";
 
+import Home from "./routes/Home/Home.jsx";
+
 const router = createBrowserRouter([
   {
     element: <App />,
     children: [
       {
         path: "/",
+        element: <Home />,
       },
     ],
   },

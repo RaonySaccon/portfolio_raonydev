@@ -1,14 +1,16 @@
 import { IoMdClose } from "react-icons/io";
 import { navItems } from "../Header/nav";
 import { FaWhatsapp } from "react-icons/fa";
+import ThemeButton from "../../components/ThemeButton/ThemeButton";
+
 export default function Aside({ toggleMenu }) {
   return (
     <>
       <div
-        className="bg-black/60 fixed w-full h-screen"
+        className="bg-black/60 fixed w-full h-screen z-100"
         onClick={toggleMenu}
       ></div>
-      <aside className="w-70 fixed h-screen bg-blue-700 text-white">
+      <aside className="z-110 sm:hidden w-70 fixed h-screen bg-blue-700 text-white">
         <header className="py-2 px-8 w-full border-b border-white/30 flex justify-between items-center">
           <h2 className="font-bold text-2xl">RaonyDev</h2>
           <button
@@ -19,7 +21,8 @@ export default function Aside({ toggleMenu }) {
             <IoMdClose />
           </button>
         </header>
-        <ul className="px-8 mt-12 text-xl gap-4 flex flex-col">
+        <ul className="px-8 my-8 mb-12 text-xl gap-4 flex flex-col">
+          <ThemeButton className="flex w-fit mb-4"></ThemeButton>
           {navItems.map((item) => (
             <li
               className={`${
