@@ -1,3 +1,16 @@
+.waving {
+  animation: waving 3s infinite alternate
+}
+
+@keyframes waving {
+  from {
+    rotate: -10deg;
+    bottom: 0;
+  } to {
+    rotate: 20deg;
+    bottom: 4px;
+  }
+}
 .react-logo {
   animation: spin infinite linear 10s;
   filter: drop-shadow(0 0 8px rgba(0,0,350));

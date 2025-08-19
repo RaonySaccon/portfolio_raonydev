@@ -1,5 +1,9 @@
 @import 'tailwindcss';
-
-* {
-  transition: all ease-in 300ms;
+ html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat';
+}
+h1,h2,h3 {
+  font-family: 'League Spartan';
 }

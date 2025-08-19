@@ -15,13 +15,13 @@ export default function ThemeButton({ className }) {
       <FaSun
         className={`${
           isLight &&
-          "bg-blue-400 rounded-full text-shadow opacity-100 text-amber-100"
+          "bg-blue-600 rounded-full text-shadow opacity-100 text-amber-100"
         } p-1 opacity-0 transition-all duration-300`}
       ></FaSun>
       <FaMoon
         className={`${
           !isLight &&
-          "bg-blue-400 rounded-full text-shadow opacity-100 text-slate-800"
+          "bg-blue-600 rounded-full text-shadow opacity-100 text-slate-800"
         } p-1 opacity-0 transition-all duration-300`}
       ></FaMoon>
     </button>
