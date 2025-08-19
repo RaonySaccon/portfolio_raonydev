@@ -2,7 +2,7 @@ export const faqList = [
   {
     question: "Quem é RaonyDev?",
     answer:
-      "Sou desenvolvedor front-end de 17 anos. Comecei a programar aos 13 e desde então estudo e faço freelances.",
+      "Sou desenvolvedor front-end e criador de conteúdo. Comecei a programar aos 13 e desde então ofereço soluções digitais.",
   },
   {
     question: "Quais serviços você oferece?",

@@ -4,7 +4,10 @@ import Bold from "../../../../components/Bold/Bold";
 
 const About = () => {
   return (
-    <section className="min-h-screen flex items-center py-20 md:py-0" id="sobre">
+    <section
+      className="min-h-screen flex items-center py-20 md:py-0"
+      id="sobre"
+    >
       <div
         className="bg-slate-950 rounded px-4 py-20 text-center border-blue-800 border-3 shadow-xl md:flex md:text-right md:px-10 gap-8 items-center justify-between m-auto xl:px-20 relative overflow-hidden"
         data-aos="fade-up"
@@ -31,9 +34,8 @@ const About = () => {
           </h1>
           <p className="leading-5.5 text-base opacity-70 sm:w-10/12 m-auto md:w-full md:text-lg max-w-120 text-white">
             Comecei cedo, aos 13 anos, e venho <Bold>vivendo tecnologia</Bold>{" "}
-            como parte da minha vida. Desde então, sigo estudando muito, criando
-            muito conteúdo e buscando evoluir para entregar{" "}
-            <Bold>projetos cada vez melhores!</Bold>
+            como parte da minha vida. Desde então, estudo intensamente, crio
+            conteúdo e desenvolvo <Bold>projetos cada vez melhores!</Bold>
           </p>
           <ButtonCta text="Contato" />
         </div>

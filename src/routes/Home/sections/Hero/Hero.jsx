@@ -38,9 +38,8 @@ const Hero = () => {
               data-aos-delay="400"
             >
               <p className="leading-5 opacity-80 sm:w-9/12 mx-auto md:mx-0 max-w-150">
-                Sou <Bold>desenvolvedor front-end</Bold> e tenho 17 anos.
-                Comecei a programar com 13 e desde então venho{" "}
-                <Bold>estudando e buscando evoluir.</Bold>
+                Sou <Bold>desenvolvedor front-end.</Bold> Cada site que crio
+                conta uma história. <Bold>Vamos começar a sua? </Bold>
               </p>
               <div className="flex gap-12 mx-auto mt-7 md:mx-0 md:mt-0">
                 {MEDIAS.map((item) => (

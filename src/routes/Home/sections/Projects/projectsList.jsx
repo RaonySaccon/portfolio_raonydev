@@ -13,11 +13,11 @@ export const projectsList = [
     image: "/projects/jokershopp.png",
     url: "https://jokershopp.netlify.app",
   },
-  // {
-  //   title: "Mãe Nina D'Oxum",
-  //   description:
-  //     "Site da Mãe Nina de Oxum, um site de atendimento espiritual com tradição afro-brasileira.",
-  //   image: "/projects/ninadeoxum.png",
-  //   url: "https://ninadeoxum.netlify.app",
-  // },
+  {
+    title: "Mãe Nina D'Oxum",
+    description:
+      "Site da Mãe Nina de Oxum, um site de atendimento espiritual com tradição afro-brasileira.",
+    image: "/projects/ninadeoxum.png",
+    url: "https://ninadeoxum.netlify.app",
+  },
 ];

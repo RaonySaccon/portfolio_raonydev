@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../context/Theme/ThemeContext";
+import { AnimatePresence, motion } from "motion/react";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -21,8 +22,33 @@ export default function Home() {
   function Margin({ children }) {
     return <div className="mx-auto w-10/12 sm:w-10/12 ">{children}</div>;
   }
+  const [showSplash, setShowSplash] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSplash(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
+      <AnimatePresence>
+        {showSplash && (
+          <div className="fixed top-0 left-0 w-full h-screen z-1000 flex">
+            <motion.div
+              initial={{ x: 0 }}
+              animate={{ x: "-100%" }}
+              transition={{ duration: 1 }}
+              className="flex-1 bg-gray-200"
+            ></motion.div>
+            <motion.div
+              initial={{ x: 0 }}
+              animate={{ x: "100%" }}
+              transition={{ duration: 1 }}
+              className="flex-1 bg-gray-200"
+            ></motion.div>
+          </div>
+        )}
+      </AnimatePresence>
       <main
         className={`${
           isLight ? " text-slate-950 bg-gray-200" : "bg-slate-900 text-amber-50"
