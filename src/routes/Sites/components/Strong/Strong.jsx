@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Strong = () => {
+const Strong = ({children}) => {
   return (
-    <div>Strong</div>
+    <span className='text-yellow-400 underline'>{children}</span>
   )
 }
 

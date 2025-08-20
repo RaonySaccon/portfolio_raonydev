@@ -1,5 +1,11 @@
-import Hero from "./sections/Hero/Hero";
 import "./Sites.css";
+
+import Hero from "./sections/Hero/Hero";
+import Beneficios from "./sections/Beneficios/Beneficios";
+import Processo from "./sections/Processo/Processo";
+import Cta from "./sections/Cta/Cta";
+import Vantagens from "./sections/Vantagens/Vantagens";
+import FAQ from "./sections/Faq/Faq";
 
 const Sites = () => {
   function Margin({ children }) {
@@ -11,6 +17,13 @@ const Sites = () => {
     <main className="sites-section bg-black">
       <Margin>
         <Hero />
+        <Beneficios />
+        <Processo />
+      </Margin>
+      <Cta />
+      <Margin>
+        <Vantagens />
+        <FAQ />
       </Margin>
     </main>
   );
