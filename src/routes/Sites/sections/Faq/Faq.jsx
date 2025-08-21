@@ -11,7 +11,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="w-full max-w-4xl mx-auto p-4">
+    <section className="w-full max-w-4xl mx-auto p-4 py-20">
       <h2 className="text-2xl text-center mb-8">
         <Gradient>Perguntas frequentes</Gradient> <Strong>(FAQ)</Strong>
       </h2>

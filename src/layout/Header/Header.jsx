@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Aside from "../Aside/Aside";
-import { navItems } from "./nav";
+import { navItems } from "./Nav";
 import ThemeButton from "../../components/ThemeButton/ThemeButton";
 import { AnimatePresence } from "motion/react";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuView, setMenuView] = useState(false);
