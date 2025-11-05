@@ -57,7 +57,7 @@ const Projects = () => {
           <Swiper
             onSwiper={(s) => (swiperRef.current = s)}
             modules={[Navigation, Pagination]}
-            spaceBetween={30}
+            spaceBetween={30} 
             slidesPerView={1}
             centeredSlides={true}
             navigation={false}

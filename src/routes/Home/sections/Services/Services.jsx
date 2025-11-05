@@ -4,6 +4,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 import { useContext } from "react";
 import { ThemeContext } from "../../../../context/Theme/ThemeContext";
 import ButtonCta from "../../../../components/ButtonCta/ButtonCta";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const { isLight } = useContext(ThemeContext);
@@ -37,8 +38,7 @@ const Services = () => {
               <p className="leading-6 opacity-80">{item.description}</p>
 
               <a
-                href="https://wa.me/5551999355193"
-                target="_blank"
+                href={item.path}
                 className="absolute bottom-6 text-blue-600 flex items-center gap-2 hover:scale-95 transition "
               >
                 Ver mais

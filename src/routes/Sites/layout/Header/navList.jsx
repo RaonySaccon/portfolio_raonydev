@@ -8,26 +8,26 @@ export const navList = [
   {
     icon: <BiHome />,
     title: "Ínicio",
-    path: "",
+    path: "home",
   },
   {
     icon: <BiStar />,
     title: "Benefícios",
-    path: "",
+    path: "benefícios",
   },
   {
     icon: <MdMiscellaneousServices />,
     title: "Como funciona",
-    path: "",
+    path: "processo",
   },
   {
     icon: <GrContact />,
     title: "Contato",
-    path: "",
+    path: "contato",
   },
   {
     icon: <FaQ />,
     title: "FAQ",
-    path: "",
+    path: "faq",
   }
 ]

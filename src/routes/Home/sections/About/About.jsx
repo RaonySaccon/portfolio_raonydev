@@ -18,7 +18,7 @@ const About = () => {
           <div className="size-3 rounded-full bg-blue-600"></div>
         </div>
         <img
-          src="/raonydev_logo.png"
+          src="/raonydev_logo.webp"
           alt="Logo RaonyDev"
           className="w-8/12 m-auto mb-5 md:my-0 sm:w-5/12 xl:w-4/12 md:mx-0 md:max-w-130"
           data-aos-delay="200"

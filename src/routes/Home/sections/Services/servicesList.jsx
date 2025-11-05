@@ -7,6 +7,7 @@ export const servicesList = [
     title: "Desenvolvimento de sites",
     description:
       "Desenvolvo sites que além de resolver seu problema, refletem sua marca.",
+    path: "/sites",
   },
   {
     icon: <FaCode />,
