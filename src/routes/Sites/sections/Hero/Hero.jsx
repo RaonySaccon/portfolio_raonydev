@@ -32,7 +32,7 @@ const Hero = () => {
             data-aos-delay="400"
           >
             Nosso processo é simples e direto: você compartilha sua ideia e seus
-            objetivos; nós entregamos uma página que vende por você.
+            objetivos; nós entregamos um site que te traz clientes.
           </p>
 
           <div
