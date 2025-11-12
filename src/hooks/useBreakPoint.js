@@ -5,7 +5,7 @@ const useBreakpoint = () => {
   const [isMd, setIsMd] = useState(false); // equivale a md:
   const [isLg, setIsLg] = useState(false); // equivale a lg:
 
-  useEffect(() => {
+  useEffect(() => { 
     const smQuery = window.matchMedia("(min-width: 640px)");
     const mdQuery = window.matchMedia("(min-width: 768px)");
     const lgQuery = window.matchMedia("(min-width: 1024px)");
@@ -22,7 +22,7 @@ const useBreakpoint = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  return { isSm, isMd, isLg };
+  return {isSm, isMd, isLg}
 };
 
 export default useBreakpoint;

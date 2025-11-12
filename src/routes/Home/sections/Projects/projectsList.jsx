@@ -3,7 +3,7 @@ export const projectsList = [
     title: "JokerShopp",
     description:
       "Fiz essa loja virtual para uma loja de roupas estilo streetwear da cidade de Arroio do Sal - RS",
-    image: "/projects/jokershopp.png",
+    image: "/projects/jokershopp.webp",
     url: "https://jokershopp.netlify.app",
   },
   {

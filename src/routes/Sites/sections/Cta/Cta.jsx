@@ -2,6 +2,7 @@ import ButtonCta from "../../components/ButtonCta/ButtonCta";
 
 const Cta = () => {
   return (
+    <div className="py-20" id="contato">
     <section className="mt-20 px-6 bg-yellow-400 w-full md:flex items-center pb-15 justify-around md:pb-0">
       <img
         src="/images/sites/website.png"
@@ -22,6 +23,7 @@ const Cta = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 

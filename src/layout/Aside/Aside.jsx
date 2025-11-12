@@ -1,5 +1,5 @@
 import { IoMdClose } from "react-icons/io";
-import { navItems } from "../Header/nav";
+import { navItems } from "../Header/Nav";
 import { FaWhatsapp } from "react-icons/fa";
 import ThemeButton from "../../components/ThemeButton/ThemeButton";
 import { motion } from "motion/react";
