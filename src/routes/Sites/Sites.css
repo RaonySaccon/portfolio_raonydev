@@ -1,5 +1,11 @@
 .sites-section {
-  & h1,h2,h3,h4,h5,h6,button {
+  & h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  button {
     font-family: "Orbitron";
     font-weight: bold;
   }
@@ -9,4 +15,20 @@
 .orbitron {
   font-family: "Orbitron";
   font-weight: bold;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px rgba(34, 197, 94, 0.6);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite ease-in-out;
 }

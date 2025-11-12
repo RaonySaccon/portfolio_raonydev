@@ -9,6 +9,9 @@ import Beneficios from "./sections/Beneficios/Beneficios";
 import Processo from "./sections/Processo/Processo";
 import Cta from "./sections/Cta/Cta";
 import Vantagens from "./sections/Vantagens/Vantagens";
+import OfertaEspecial from "./sections/OfertaEspecial/OfertaEspecial";
+import Depoimentos from "./sections/Depoiments/Depoiments";
+import ProvaSocial from "./sections/ProvaSocial/ProvaSocial";
 import FAQ from "./sections/Faq/Faq";
 import Footer from "./layout/Footer/Footer";
 import WhatsappBtn from "../../components/WhatsappBtn/WhatsappBtn";
@@ -33,11 +36,16 @@ const Sites = () => {
       <Margin>
         <Hero />
         <Beneficios />
+        <ProvaSocial />
+        <OfertaEspecial />
         <Processo />
+      </Margin>
+      <Depoimentos />
+      <Margin>
+        <Vantagens />
       </Margin>
       <Cta />
       <Margin>
-        <Vantagens />
         <FAQ />
       </Margin>
       <Footer />

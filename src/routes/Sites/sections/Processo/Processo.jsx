@@ -1,3 +1,4 @@
+import ButtonCta from "../../components/ButtonCta/ButtonCta";
 import Strong from "../../components/Strong/Strong";
 import Gradient from "../../components/Gradient/Gradient";
 
@@ -10,19 +11,27 @@ const Processo = () => {
   ];
 
   return (
-    <section className="min-h-screen flex items-center py-20" id="processo">
-      <div className="w-full">
+    <section
+      className="min-h-screen flex flex-col justify-center items-center py-20"
+      id="processo"
+    >
+      <div className="w-full max-w-6xl mx-auto px-6">
         {/* Título */}
-        <div className="text-center" data-aos="fade-up" data-aos-duration="800">
+        <div
+          className="text-center mb-12"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           <h2 className="text-2xl leading-5.5 lg:text-3xl">
             <Gradient>Como funciona o </Gradient>
             <Strong>processo?</Strong>
           </h2>
         </div>
 
-        <div className="flex flex-col-reverse gap-8 mt-12 lg:flex-row items-center justify-between lg:mt-20">
+        {/* Conteúdo principal */}
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-12 lg:gap-20">
           {/* Passos */}
-          <div className="flex flex-col gap-2 opacity-80 md:text-lg lg:w-120">
+          <div className="flex flex-col gap-3 text-center lg:text-left opacity-80 md:text-lg lg:w-1/2">
             {passos.map((text, index) => (
               <p
                 key={index}
@@ -36,14 +45,21 @@ const Processo = () => {
           </div>
 
           {/* Imagem */}
-          <img
-            src="/images/sites/processo.png"
-            alt="Passo a passo do processo"
-            className="w-11/10 sm:w-9/12 mx-auto md:w-6/12 lg:max-w-140"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          />
+          <div className="flex justify-center lg:justify-end lg:w-1/2">
+            <img
+              src="/images/sites/processo.png"
+              alt="Passo a passo do processo"
+              className="w-10/12 sm:w-9/12 md:w-7/12 lg:w-full max-w-md"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+          </div>
         </div>
+        <ButtonCta
+          text="MAIS INFORMAÇÕES"
+          data-aos="fade-up"
+          className="mx-auto mt-16"
+        />
       </div>
     </section>
   );
