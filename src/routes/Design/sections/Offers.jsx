@@ -1,5 +1,6 @@
 // data
 import { offers } from "../data/offersData";
+import { wame } from "../../../data/socialMedia";
 
 export default function Offers() {
   return (
@@ -51,7 +52,8 @@ export default function Offers() {
 
             <div className="mt-4">
               <a
-                href="#cta"
+                href={wame}
+                target="_blank"
                 className="inline-flex items-center gap-2 rounded-md bg-indigo-600 text-white px-4 py-2 text-sm"
               >
                 Pedir orçamento

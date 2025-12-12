@@ -1,9 +1,11 @@
 import { FaWhatsapp } from "react-icons/fa";
+import { wame } from "../../../data/socialMedia";
 
 export default function Button({ text = "Entrar em contato", className }) {
   return (
     <a
-      href="#"
+      href={wame}
+      target="_blank"
       className={`${className} inline-flex items-center gap-2 rounded-lg bg-gradient-to-tr from-indigo-500 to-indigo-800 text-white px-8 py-3 font-medium shadow-lg hover:bg-indigo-700 transition hover:scale-95`}
     >
       {text} <FaWhatsapp />

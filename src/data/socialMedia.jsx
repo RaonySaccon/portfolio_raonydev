@@ -5,6 +5,7 @@ import { FaRegWindowMaximize } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
+export const wame = "https://wa.me/51999355193";
 export const MEDIAS = [
   {
     icon: <FaRegWindowMaximize />,
@@ -15,7 +16,7 @@ export const MEDIAS = [
   {
     icon: <FaWhatsapp />,
     title: "Whatsapp",
-    link: "https://wa.me/51999355193",
+    link: wame,
     highlight: true,
   },
   {

@@ -18,8 +18,8 @@ export const servicesList = [
     icon: <FaPaintBrush />,
     title: "Design para publicidade",
     description: "Artes para promoções, stories, feeds e materiais comerciais.",
-    link: MEDIAS[1].link,
-    path: MEDIAS[1].link,
+    link: "https://raonydev.com/design",
+    path: "/design",
   },
   {
     icon: <SiGoogleads />,

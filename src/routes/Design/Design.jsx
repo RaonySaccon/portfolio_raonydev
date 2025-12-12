@@ -12,6 +12,9 @@ import Depoiments from "./sections/Depoiments";
 import Cta from "./sections/Cta";
 import Footer from "./sections/Footer";
 
+// components
+import WhatsappBtn from "../../components/WhatsappBtn/WhatsappBtn";
+
 export default function LPDesignPublicidade() {
   useEffect(() => {
     Aos.init({ duration: 600, once: true });
@@ -26,6 +29,7 @@ export default function LPDesignPublicidade() {
         <Depoiments />
         <Cta />
         <Footer />
+        <WhatsappBtn />
       </main>
     </div>
   );
