@@ -26,8 +26,8 @@ const ProvaSocial = () => {
     return () => window.removeEventListener("resize", updateDevice);
   }, []);
 
-  const duration = isMobile ? 10 : 25; // mais rápido no mobile
-  const translateValue = isMobile ? -1200 : -2500; // movimento menor, mas mais perceptível
+  const duration = isMobile ? 10 : 25; 
+  const translateValue = isMobile ? -1200 : -2500;
 
   return (
     <section

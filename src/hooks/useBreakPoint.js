@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 const useBreakpoint = () => {
-  const [isSm, setIsSm] = useState(false); // equivale a sm:
-  const [isMd, setIsMd] = useState(false); // equivale a md:
-  const [isLg, setIsLg] = useState(false); // equivale a lg:
+  const [isSm, setIsSm] = useState(false); 
+  const [isMd, setIsMd] = useState(false); 
+  const [isLg, setIsLg] = useState(false); 
 
   useEffect(() => { 
     const smQuery = window.matchMedia("(min-width: 640px)");

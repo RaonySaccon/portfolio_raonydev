@@ -1,30 +1,30 @@
 export const projectsList = [
   {
-    title: "JokerShopp",
+    title: "Padaria Rosa",
     description:
-      "Fiz essa loja virtual para uma loja de roupas estilo streetwear da cidade de Arroio do Sal - RS",
-    image: "/projects/jokershopp.webp",
-    url: "https://jokershopp.netlify.app",
-  },
-  {
-    title: "Box Zero 3",
-    description:
-      "Desenvolvi esse site para a oficina mecânica Box Zero 3, premiada há 8 anos como a melhor de Arroio do Sal - RS.",
-    image: "/projects/boxzero3.webp",
-    url: "https://boxzero3.netlify.app",
-  },
-  {
-    title: "Krusty Car",
-    description:
-      "Desenvolvi esse site para a oficina de chapeação automotiva chamada Krusty Personal Car.",
-    image: "/projects/krusty.png",
-    url: "https://krustycar.netlfiy.app",
+      "Site criado para transmitir o aconchego da Padaria Rosa e facilitar pedidos e contato.",
+    image: "/projects/padaria-rosa.png",
+    url: "https://padariarosa.com.br",
   },
   {
     title: "Mãe Nina D'Oxum",
     description:
-      "Site da Mãe Nina de Oxum, um site de atendimento espiritual com tradição afro-brasileira.",
+      "Site desenvolvido para atendimentos espirituais, unindo tradição e facilidade de contato.",
     image: "/projects/ninadeoxum.webp",
-    url: "https://ninadeoxum.netlify.com",
+    url: "https://ninadeoxum.com",
+  },
+  {
+    title: "JokerShopp",
+    description:
+      "Loja virtual de streetwear focada em estilo e praticidade para pedidos.",
+    image: "/projects/jokershopp.webp",
+    url: "https://jokershopp.netlify.app",
+  },
+  {
+    title: "Krusty Car",
+    description:
+      "Site criado para apresentar os serviços e projetos da oficina.",
+    image: "/projects/krusty.png",
+    url: "https://krustycar.netlfiy.app",
   },
 ];

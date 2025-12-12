@@ -13,8 +13,8 @@ const Footer = () => {
           © 2025 RaonyDev. Todos os direitos reservados.
         </p>
         <div className="flex gap-6 text-2xl justify-center mt-6 md:justify-end md:mt-2">
-          {MEDIAS.map((item) => (
-            <a href={item.link} target="_blank">
+          {MEDIAS.filter((item) => item.highlight).map((item) => (
+            <a href={item.link} target="_blank" key={item.link}>
               <div className="bg-slate-700 rounded p-1 text-blue-200 hover:text-white hover:bg-slate-800 transition">
                 {item.icon}
               </div>

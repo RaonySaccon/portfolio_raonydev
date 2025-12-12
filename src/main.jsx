@@ -8,6 +8,8 @@ import ThemeProvider from "./context/Theme/ThemeProvider.jsx";
 
 import Home from "./routes/Home/Home.jsx";
 import Sites from "./routes/Sites/Sites.jsx";
+import Links from "./routes/Links/Links.jsx";
+import LPDesignPublicidade from "./routes/Design/Design.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
       {
         path: "/sites",
         element: <Sites />,
+      },
+      {
+        path: "/links",
+        element: <Links />,
+      },
+      {
+        path: "/design",
+        element: <LPDesignPublicidade />,
       },
     ],
   },

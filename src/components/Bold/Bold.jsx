@@ -1,7 +1,3 @@
-import React from "react";
-
-const Bold = ({ children }) => {
+export default function Bold({ children }) {
   return <span className="font-bold">{children}</span>;
-};
-
-export default Bold;
+}

@@ -9,7 +9,6 @@ const OfertaEspecial = () => {
       className="relative py-24 text-center overflow-hidden bg-neutral-950 text-white"
       id="oferta-especial"
     >
-      {/* Fundo animado leve */}
       <motion.div
         className="absolute inset-0 opacity-30 bg-gradient-to-r from-green-400/20 via-yellow-500/10 to-transparent blur-3xl"
         animate={{ x: ["0%", "100%"] }}
@@ -21,7 +20,6 @@ const OfertaEspecial = () => {
       />
 
       <div className="relative z-10 max-w-3xl mx-auto px-6">
-        {/* Título */}
         <motion.h2
           className="text-3xl md:text-4xl font-bold mb-6"
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +29,6 @@ const OfertaEspecial = () => {
           Veja como seu site ficaria — <Gradient>100% grátis</Gradient>
         </motion.h2>
 
-        {/* Texto principal */}
         <motion.p
           className="text-base md:text-lg opacity-80 mb-10"
           initial={{ opacity: 0, y: 20 }}
@@ -44,7 +41,6 @@ const OfertaEspecial = () => {
           Você só paga se quiser continuar. Simples, transparente e sem risco.
         </motion.p>
 
-        {/* Benefícios */}
         <motion.div
           className="space-y-3 mb-10 text-lg font-semibold"
           initial={{ opacity: 0, y: 20 }}

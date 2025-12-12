@@ -1,10 +1,9 @@
 import Gradient from "../../../../components/Gradient/Gradient";
-import { servicesList } from "./servicesList";
 import { MdArrowRightAlt } from "react-icons/md";
 import { useContext } from "react";
 import { ThemeContext } from "../../../../context/Theme/ThemeContext";
 import ButtonCta from "../../../../components/ButtonCta/ButtonCta";
-import { Link } from "react-router-dom";
+import { servicesList } from "../../../../data/services";
 
 const Services = () => {
   const { isLight } = useContext(ThemeContext);
@@ -23,23 +22,27 @@ const Services = () => {
         <p className="opacity-70" data-aos="fade-up">
           Dê uma olhada nos serviços que ofereco ;)
         </p>
-        <ul className="flex flex-col gap-8 mt-10 md:flex-row">
+        <ul className="grid grid-cols-1 gap-8 mt-10 xl:grid-cols-2 2xl:grid-cols-4">
           {servicesList.map((item) => (
             <li
               data-aos="zoom-in"
               className={`${
                 isLight ? "bg-white" : "bg-slate-950"
-              } w-full rounded text-left p-8 flex flex-col gap-5 relative pb-20 md:size-85 md:pb-0 md:p-12`}
+              } w-full rounded text-left p-8 flex flex-col gap-5 relative md:p-12`}
             >
               <span className="text-4xl text-blue-600">{item.icon}</span>
+
               <h3 className="text-2xl font-bold leading-6">
                 <Gradient>{item.title}</Gradient>
               </h3>
-              <p className="leading-6 opacity-80">{item.description}</p>
+
+              <p className="leading-6 opacity-80 flex-grow">
+                {item.description}
+              </p>
 
               <a
                 href={item.path}
-                className="absolute bottom-6 text-blue-600 flex items-center gap-2 hover:scale-95 transition "
+                className="text-blue-600 flex items-center gap-2 hover:scale-95 transition mt-auto"
               >
                 Ver mais
                 <MdArrowRightAlt className="mt-1" />

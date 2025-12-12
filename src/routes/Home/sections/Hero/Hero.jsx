@@ -42,8 +42,8 @@ const Hero = () => {
                 conta uma história. <Bold>Vamos começar a sua? </Bold>
               </p>
               <div className="flex gap-12 mx-auto mt-7 md:mx-0 md:mt-0">
-                {MEDIAS.map((item) => (
-                  <a href={item.link} target="_blank">
+                {MEDIAS.filter((item) => item.highlight).map((item) => (
+                  <a href={item.link} target="_blank" key={item.link}>
                     <div className="text-white bg-blue-900 rounded p-1.5 cursor-pointer hover:scale-110 transition hover:bg-blue-800">
                       {item.icon}
                     </div>
