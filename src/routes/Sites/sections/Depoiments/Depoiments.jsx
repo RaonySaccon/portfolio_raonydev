@@ -1,6 +1,7 @@
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import Gradient from "../../components/Gradient/Gradient";
 import Strong from "../../components/Strong/Strong";
+import ButtonCta from "../../components/ButtonCta/ButtonCta";
 
 const Depoimentos = () => {
   const depoimentos = [
@@ -73,6 +74,7 @@ const Depoimentos = () => {
           </div>
         ))}
       </div>
+      <ButtonCta text="TRANSFORMAR MEU NEGÓCIO" className="mx-auto mt-14"/>
 
       {/* animações custom */}
       <style>

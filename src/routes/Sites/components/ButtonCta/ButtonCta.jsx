@@ -24,7 +24,7 @@ const ButtonCta = ({ text, className, black }) => {
 
   return (
     <a
-      href="https://wa.me/51999355193"
+      href="https://wa.me/5551999355193"
       target="_blank"
       rel="noopener noreferrer"
       className={`orbitron ${defaultClass} ${className}`}
